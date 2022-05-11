@@ -10,7 +10,7 @@ public class forLoopMulTable {
 		
 		//for incrementing value of i form 1 to 10
 		for(int i=1;i<=11;i++) {
-			System.out.println("2 x "+i+" x "+i*2);
+			System.out.println("2 x "+i+" = "+i*2);
 		}
 
 	}
