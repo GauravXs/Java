@@ -14,7 +14,7 @@ public class while_table {
 		
 		//while loop incrementing value from 1 to 10
 		while(i<=10) {
-			System.out.println(num+" x "+i+" x "+i*num);
+			System.out.println(num+" x "+i+" = "+i*num);
 			i++;
 		}
 	}
