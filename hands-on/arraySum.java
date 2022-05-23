@@ -11,7 +11,7 @@ public class arraySum {
 		   len = sc.nextInt();
 		   
 		   int arr[]= new int[len];
-		   System.out.println("Enter "+ len + "Element to store in Array\n" );
+		   System.out.println("Enter "+ len + " Element to store in Array\n" );
 		   
 		   for(int i=0; i<len; i++) 
 		   {
