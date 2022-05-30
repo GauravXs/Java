@@ -4,7 +4,7 @@ package LabSessions;
 import java.util.Scanner;
 
 public class EvenOddSum {
-
+	//main method
 	public static void main(String args[]){
 		//Creating scanner class object
 		Scanner sc = new Scanner(System.in);
