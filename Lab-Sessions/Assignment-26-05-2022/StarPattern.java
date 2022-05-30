@@ -3,6 +3,7 @@ package LabSessions;
 //Java program to print * pattern
 
 public class StarPattern {
+	//main method
 	public static void main(String[] args) {
 		int col = 1;	//Declaring and initializing variable
 		int n=5;		//Declaring and initializing variable 
