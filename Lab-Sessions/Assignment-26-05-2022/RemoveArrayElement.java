@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 class RemoveArrayElement {
-	
+	//main method
 	public static void main(String[] args) {
 		//Creating object of Scanner class
 		Scanner sc = new Scanner(System.in);
