@@ -19,22 +19,22 @@ public class StarPattern {
 	        }
 
 	        //print 2nd triangle 
-	        int j = 1;						//Declaring and initializing variable
+	        int j = 1;				//Declaring and initializing variable
 	        while(j <= col ) {
 	            System.out.print("*");		//for printing star
-	            j = j + 1;					//for incrementing j by 1
+	            j = j + 1;				//for incrementing j by 1
 	        }
 
 	        //print 3rd triangle
 	        int start = col - 1;			//Declaring and initializing variable
 	        while(start>0) {
-	            System.out.print("*");      //for printing star
+	            System.out.print("*");      	//for printing star
 	            start = start - 1;			//for decrementing start by 1`
 	      
 	        }
 
 	       System.out.println();
-	        col = col + 1;		//for incrementing col by 1
+	        col = col + 1;				//for incrementing col by 1
 	        
 	        
 	   
