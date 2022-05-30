@@ -14,7 +14,7 @@ public class LinkedListIterate {
 		LinkedList<String> al=new LinkedList<String>();  //Creating LinkedList
 		int n=5;	//Declaring and Initialization of variable n 
 		
-		System.out.println("Enter 5 values here: ");
+		System.out.println("Enter 5 values : ");
 		for(int i=0;i<n;i++) {		//here n is the length of an linkedList
 			al.add(sc.next());		//Taking input from user
 		}
