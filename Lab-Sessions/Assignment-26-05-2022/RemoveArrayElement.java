@@ -20,7 +20,7 @@ class RemoveArrayElement {
 		 
 		 System.out.println("\n Enter Index of an element you want to remove: ");
 		 int removeIndex = sc.nextInt();	//Taking input from the user 
-		 int j=0;		//Declared and Initialized variable j
+		 int j=0;				//Declared and Initialized variable j
 		 for(int i = 0; i < my_array.length -1; i++)
 		 {
 			//Value of i is the index we want to remove i.e removeIndex value
@@ -35,7 +35,7 @@ class RemoveArrayElement {
 		     }
 		    
 		    }
-		     System.out.println("New Array : "+Arrays.toString(my_array));  //for converting Array toString & printing new array 
+		     System.out.println("New Array : "+Arrays.toString(my_array)); 	 //for converting Array toString & printing new array 
 		    }
 		  }
 
