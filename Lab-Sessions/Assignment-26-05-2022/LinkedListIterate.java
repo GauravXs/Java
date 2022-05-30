@@ -1,6 +1,4 @@
 package LabSessions;
-//Java program that reads a set of integers, and 
-//then prints the sum of the even and odd integers
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -14,7 +12,7 @@ public class LinkedListIterate {
 		LinkedList<String> al=new LinkedList<String>();  //Creating LinkedList
 		int n=5;	//Declaring and Initialization of variable n 
 		
-		System.out.println("Enter 5 values : ");
+		System.out.println("Enter 5 values: ");
 		for(int i=0;i<n;i++) {		//here n is the length of an linkedList
 			al.add(sc.next());		//Taking input from user
 		}
