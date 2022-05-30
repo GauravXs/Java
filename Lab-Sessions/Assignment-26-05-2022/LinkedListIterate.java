@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class LinkedListIterate {
+	//main method
 	public static void main(String[] args) {
 		//Creating instance of Scanner class
 		Scanner sc = new Scanner(System.in);
