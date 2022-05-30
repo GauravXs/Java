@@ -1,4 +1,6 @@
 package LabSessions;
+//Java program that reads a set of integers, and 
+//then prints the sum of the even and odd integers
 
 import java.util.Iterator;
 import java.util.LinkedList;
