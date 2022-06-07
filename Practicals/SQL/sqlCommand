@@ -1,0 +1,25 @@
+ use sooraj;
+Database changed
+mysql> desc person;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| id        | int          | NO   | PRI | NULL    |       |
+| firstname | varchar(20)  | NO   |     | NULL    |       |
+| lastname  | varchar(30)  | NO   |     | NULL    |       |
+| address   | varchar(100) | NO   |     | NULL    |       |
+| city      | varchar(20)  | NO   |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+5 rows in set (0.01 sec)
+
+mysql> select * from person;
++-----+-----------+-------------+---------+------------+
+| id  | firstname | lastname    | address | city       |
++-----+-----------+-------------+---------+------------+
+| 101 | Suraj     | Suryawanshi | xyz     | Mumbai     |
+| 102 | Dwyane    | Abrahim     | xyz     | Manchester |
+| 103 | Johnattan | Luka        | abc     | Tokyo      |
+| 104 | Shivraj   | Surya       | xyz     | Pune       |
+| 105 | Luka      | Modrics     | abc     | Munich     |
++-----+-----------+-------------+---------+------------+
+5 rows in set (0.00 sec)
