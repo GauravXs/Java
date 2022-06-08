@@ -1,0 +1,142 @@
+
+mysql> use sooraj;
+Database changed
+mysql> create table EmpData(
+    -> Emp_Id int primary key,
+    -> FirstName varchar(20) not null,
+    -> LastName varchar(30) not null,
+    -> Salary int not null,
+    -> City varchar(20)
+    -> );
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> desc EmpData;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| Emp_Id    | int         | NO   | PRI | NULL    |       |
+| FirstName | varchar(20) | NO   |     | NULL    |       |
+| LastName  | varchar(30) | NO   |     | NULL    |       |
+| Salary    | int         | NO   |     | NULL    |       |
+| City      | varchar(20) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> select * from EmpData;
+Empty set (0.01 sec)
+
+mysql> insert into EmpData values (101,'Suraj','Suryawanshi',20000,'Mumbai'),(102,'Dwyane','Johson',10000,'NewYork'),(103,'John','Abrahim',25000,'Chennai'),(104,'Shivraj','Surya',30000,'Pune'),(105,'Johnatan','Swift',30000,'LosAngel');
+Query OK, 5 rows affected (0.01 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+mysql> select * from EmpData;
++--------+-----------+-------------+--------+----------+
+| Emp_Id | FirstName | LastName    | Salary | City     |
++--------+-----------+-------------+--------+----------+
+|    101 | Suraj     | Suryawanshi |  20000 | Mumbai   |
+|    102 | Dwyane    | Johson      |  10000 | NewYork  |
+|    103 | John      | Abrahim     |  25000 | Chennai  |
+|    104 | Shivraj   | Surya       |  30000 | Pune     |
+|    105 | Johnatan  | Swift       |  30000 | LosAngel |
++--------+-----------+-------------+--------+----------+
+5 rows in set (0.00 sec)
+
+mysql> alter table EmpData  add Country varchar(20);
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from EmpData;
++--------+-----------+-------------+--------+----------+---------+
+| Emp_Id | FirstName | LastName    | Salary | City     | Country |
++--------+-----------+-------------+--------+----------+---------+
+|    101 | Suraj     | Suryawanshi |  20000 | Mumbai   | NULL    |
+|    102 | Dwyane    | Johson      |  10000 | NewYork  | NULL    |
+|    103 | John      | Abrahim     |  25000 | Chennai  | NULL    |
+|    104 | Shivraj   | Surya       |  30000 | Pune     | NULL    |
+|    105 | Johnatan  | Swift       |  30000 | LosAngel | NULL    |
++--------+-----------+-------------+--------+----------+---------+
+5 rows in set (0.01 sec)
+
+mysql> alter table EmpData rename Emp_Id to EmployID;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'to EmployID' at line 1
+mysql> alter table EmpData rename column Emp_Id to EmployID;
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from EmpData;
++----------+-----------+-------------+--------+----------+---------+
+| EmployID | FirstName | LastName    | Salary | City     | Country |
++----------+-----------+-------------+--------+----------+---------+
+|      101 | Suraj     | Suryawanshi |  20000 | Mumbai   | NULL    |
+|      102 | Dwyane    | Johson      |  10000 | NewYork  | NULL    |
+|      103 | John      | Abrahim     |  25000 | Chennai  | NULL    |
+|      104 | Shivraj   | Surya       |  30000 | Pune     | NULL    |
+|      105 | Johnatan  | Swift       |  30000 | LosAngel | NULL    |
++----------+-----------+-------------+--------+----------+---------+
+5 rows in set (0.01 sec)
+
+mysql> update EmpData set Country ='INDIA' where EmployID=101;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update EmpData set Country ='INDIA' where EmployID=102;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update EmpData set Country ='INDIA' where EmployID=104;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from EmpData;
++----------+-----------+-------------+--------+----------+---------+
+| EmployID | FirstName | LastName    | Salary | City     | Country |
++----------+-----------+-------------+--------+----------+---------+
+|      101 | Suraj     | Suryawanshi |  20000 | Mumbai   | INDIA   |
+|      102 | Dwyane    | Johson      |  10000 | NewYork  | INDIA   |
+|      103 | John      | Abrahim     |  25000 | Chennai  | NULL    |
+|      104 | Shivraj   | Surya       |  30000 | Pune     | INDIA   |
+|      105 | Johnatan  | Swift       |  30000 | LosAngel | NULL    |
++----------+-----------+-------------+--------+----------+---------+
+5 rows in set (0.00 sec)
+
+mysql> delete from EmpData where EmployID = 102;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from EmpData;
++----------+-----------+-------------+--------+----------+---------+
+| EmployID | FirstName | LastName    | Salary | City     | Country |
++----------+-----------+-------------+--------+----------+---------+
+|      101 | Suraj     | Suryawanshi |  20000 | Mumbai   | INDIA   |
+|      103 | John      | Abrahim     |  25000 | Chennai  | NULL    |
+|      104 | Shivraj   | Surya       |  30000 | Pune     | INDIA   |
+|      105 | Johnatan  | Swift       |  30000 | LosAngel | NULL    |
++----------+-----------+-------------+--------+----------+---------+
+4 rows in set (0.01 sec)
+
+mysql> Truncate table EmpData;
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> select * from EmpData;
+Empty set (0.01 sec)
+
+mysql> desc EmpData;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| EmployID  | int         | NO   | PRI | NULL    |       |
+| FirstName | varchar(20) | NO   |     | NULL    |       |
+| LastName  | varchar(30) | NO   |     | NULL    |       |
+| Salary    | int         | NO   |     | NULL    |       |
+| City      | varchar(20) | YES  |     | NULL    |       |
+| Country   | varchar(20) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
+
+mysql> Drop table EmpData;
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> select * from EmpData;
+ERROR 1146 (42S02): Table 'sooraj.empdata' doesn't exist
+mysql> desc EmpData;
+ERROR 1146 (42S02): Table 'sooraj.empdata' doesn't exist
+mysql>
