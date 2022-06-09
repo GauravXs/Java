@@ -1,3 +1,13 @@
+/*
+DeleteRepeats
+Write a program to delete the repeated elements in an array.
+When a letter is deleted,the remaining letters are moved one position to fill in the gap.
+The program must contain a static method called deleteRepeats(char[])
+This method will have 1 parameter of the typr char[].
+This method should return the size of the array after deleting the duplicate element from the array that is passed to this method.
+Use Scanner to provide Input of character array elements.
+The size of character array should be 4.
+*/
 package corejava;
 
 import java.util.ArrayList;
