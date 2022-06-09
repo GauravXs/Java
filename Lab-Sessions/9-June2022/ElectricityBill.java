@@ -1,3 +1,12 @@
+/*
+Electricity Bill
+Description
+Write a program to calculate electricity bill.
+Define a static method calculateElectricityBill(units) with one parameter. This method will calculate and return total electricity bill amount of units consumed.
+Customer who use 1 to 30 units pay Rs.3.5 per unit and those using 30 to 100 units pay Rs.4.00 per unit and if it is more than 100 unit pay Rs.5.00 per unit.
+Example:-
+suppose if a customer consumes total 110 units, first 30 units will be charged Rs.3.5 per unit, next 70 units will be charged Rs.4.00 per unit and remaining 10 will be charged by Rs.5.00.
+*/
 package LabSessions;
 
 import java.util.Scanner;
