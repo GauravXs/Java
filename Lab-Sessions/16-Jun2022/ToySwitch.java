@@ -11,9 +11,10 @@ public class ToySwitch
     public static String getToy(int price)
     {
         String name;
-        //using switch case statement to iterate the multiple cases
+        //using switch case statement to iterate/check the multiple cases
         switch(price)
         {
+            //here case value 350 is price of a toy
             case 350: 
                 name = "Tarzan The Wonder Car";
                 return name;
@@ -33,13 +34,12 @@ public class ToySwitch
             case 750:
                 name = "Infinity";
                 return name;
-            
+            //if the enter value doesn't match to any case it will then come into default case
             default:
                 name = "No Toys Available in this Range";
                 return name;
         }
     }
-    //main method
     public static void main(String[] args) {
     	System.out.println("Enter Price to get the Toy ");
     	Scanner sc = new Scanner (System.in); 
