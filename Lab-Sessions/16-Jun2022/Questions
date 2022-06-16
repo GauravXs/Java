@@ -1,3 +1,4 @@
+Question-1
 Description
 -Write a program to get the input as integer and create a method get Toy(int price) which uses switch case to display the toys with respect to price.
 -Insert the price through console input from the user and pass it to get Toy method
@@ -13,5 +14,14 @@ Instructions :
 Warnings :
 -Take care of white space/trailing white space
 -Trim the output and avoid special characters
--Avoid printing unnecessary values other than expected/asked 
+-Avoid printing unnecessary values other than expected/asked output
+
+Question-2
+Problem Statement
+-The Trivia game should have five questions. Each Question has a corresponding answer and point value between 1 & 5 based on the difficulty of the question.
+-The winner of the game should score 15 points.
+-The Runner-up of the game should Score 10 points.
+-If the score is 3 points he/she has lost the game.
+Requirement
+-Implementation the game using 2 string type arrays. An array of type string should be used for storing the questions and answers and 1 integer array to store the points for each answer.
 
