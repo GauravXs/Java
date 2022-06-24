@@ -27,9 +27,9 @@ class SnakeCase
 	 }
 	public static void main(String[] args) 
 	{
-		// creating a object of SnakeCase
-		SnakeCase sn=new SnakeCase();
-		System.out.println(sn.camelToSnake("DoSelect"));
+	 // creating a object of SnakeCase
+	 SnakeCase sn=new SnakeCase();
+	 System.out.println(sn.camelToSnake("DoSelect"));
 			}
 
 	}
