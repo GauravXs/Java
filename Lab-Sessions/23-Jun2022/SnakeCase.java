@@ -31,6 +31,5 @@ class SnakeCase
 	 SnakeCase sn=new SnakeCase();
 	 System.out.println(sn.camelToSnake("DoSelect"));
 	}
-
 }
 
