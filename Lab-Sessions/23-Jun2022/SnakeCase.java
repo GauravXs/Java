@@ -25,7 +25,8 @@ class SnakeCase
 	}
 	return stt;
 	 }
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		// creating a object of SnakeCase
 		SnakeCase sn=new SnakeCase();
 		System.out.println(sn.camelToSnake("DoSelect"));
