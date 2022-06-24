@@ -1,9 +1,10 @@
 package LabSessions;
 
-public class SnakeCase {
+class SnakeCase 
+{
 	public String camelToSnake(String str)
 	 {
-		//empty string
+	//empty string
 	String stt="";
 	//append first character to lower case
 	stt+=Character.toLowerCase(str.charAt(0));
@@ -14,8 +15,8 @@ public class SnakeCase {
 	 //checking the character is Unicode identifier or not
 	if (Character.isUnicodeIdentifierPart(ch))
 	{
-	stt=stt+'_';
-	 stt=stt+Character.toLowerCase(ch);
+	 stt=stt+'_';		//using add assign operator
+	 stt=stt+Character.toLowerCase(ch);	//converting char to lowercase
 	 }
 	else
 	{
@@ -24,10 +25,7 @@ public class SnakeCase {
 	}
 	return stt;
 	 }
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		// creating a object of SnakeCase
 		SnakeCase sn=new SnakeCase();
 		System.out.println(sn.camelToSnake("DoSelect"));
