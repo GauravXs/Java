@@ -1,0 +1,29 @@
+
+E:\Java Drill\IncrenPrac>javac surya.java
+
+E:\Java Drill\IncrenPrac>java FoIn
+Error: Main method not found in class FoIn, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+E:\Java Drill\IncrenPrac>javac FoIn.java
+error: file not found: FoIn.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+
+E:\Java Drill\IncrenPrac>java A
+hello
+
+E:\Java Drill\IncrenPrac>java B
+class b
+
+E:\Java Drill\IncrenPrac>java Ques7
+2
+The sum of the numbers is:250
+
+E:\Java Drill\IncrenPrac>
+
+
+
+
+
