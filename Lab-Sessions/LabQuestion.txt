@@ -1,0 +1,13 @@
+Question1:
+
+1. Create a JUnit Testing project to find Min & Max value and test it.
+
+
+Question2:
+1.Create Springboot Rest API CRUD Operation+MySQL
+2. Packages: Model,Service,Controller .
+3.Entity class:UserAccount, Fields: int id,string user_name,string password,string email
+5.Getter/Setters
+6.interface UserAccountRepository should extend JpaRepository
+7.Controller class to perform CRUD Operations.
+8.UserAccountService to call add repective methods.
